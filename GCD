@@ -1,0 +1,18 @@
+# Greatest common divisor
+number1 = int(input('Please enter number 1 ' ))
+number2 = int(input('Please enter number 2 ' ))
+
+rem1, rem2 = 0,0
+div1, div2 = 0,0
+i1 = number1
+i2 = number2
+
+while i1 > 0:
+  rem1 = number1 % i1
+  if rem1 == 0:
+    div1 = i1
+    rem2 = number2 % div1
+    if rem2 == 0:
+      print('GCD',div1 )
+      break
+  i1 -= 1
